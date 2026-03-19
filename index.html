@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="MCP Demo – explore the Model Context Protocol through an interactive demo." />
+  <title>MCP Demo</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header>
+    <nav>
+      <a class="logo" href="#">MCP Demo</a>
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#demo">Try it</a></li>
+        <li><a href="#stats">Stats</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="hero-badge">Model Context Protocol</div>
+    <h1>Connect AI to the<br /><span>tools that matter</span></h1>
+    <p>
+      MCP (Model Context Protocol) is an open standard that lets language models
+      securely interact with external tools, data sources, and services.
+    </p>
+    <div class="btn-group">
+      <a class="btn btn-primary" href="#demo">Try the demo</a>
+      <a class="btn btn-outline" href="https://modelcontextprotocol.io" target="_blank" rel="noopener">
+        Learn more ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- ── Features ── -->
+  <section id="features">
+    <div class="section-title fade-in">
+      <h2>Why MCP?</h2>
+      <p>A single, standardized interface between AI and everything else.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔌</div>
+        <h3>Universal connectivity</h3>
+        <p>One protocol to connect any AI model to any tool, database, API, or file system – no custom glue code required.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🔒</div>
+        <h3>Secure by design</h3>
+        <p>Servers expose only what they choose to expose. Models can't access resources unless explicitly granted permission.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">⚡</div>
+        <h3>Low latency</h3>
+        <p>Lightweight JSON-RPC transport keeps round-trip overhead minimal, keeping your AI workflows snappy and responsive.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🧩</div>
+        <h3>Composable tools</h3>
+        <p>Build small, focused tool servers and compose them into powerful workflows without tight coupling.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">🌐</div>
+        <h3>Open standard</h3>
+        <p>Vendor-neutral and community-driven. Integrate with any model or host that speaks MCP.</p>
+      </div>
+      <div class="feature-card fade-in">
+        <div class="feature-icon">📦</div>
+        <h3>Rich SDK support</h3>
+        <p>Official SDKs for TypeScript, Python, and more – so you can build servers and clients in your preferred language.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Interactive Demo ── -->
+  <section id="demo">
+    <div class="section-title fade-in">
+      <h2>Interactive demo</h2>
+      <p>Type a message and see how MCP tool calls work in practice.</p>
+    </div>
+    <div class="demo-box fade-in">
+      <div class="demo-input-row">
+        <input
+          id="demo-input"
+          type="text"
+          placeholder="Type something and press Run…"
+          autocomplete="off"
+        />
+        <button id="demo-btn" class="btn btn-primary">Run →</button>
+      </div>
+      <pre id="demo-output">// Type a message above and click Run ↑</pre>
+    </div>
+  </section>
+
+  <!-- ── Stats ── -->
+  <section id="stats">
+    <div class="stats-grid">
+      <div class="fade-in">
+        <div class="stat-number" data-target="200" data-suffix="+">0</div>
+        <div class="stat-label">Community servers</div>
+      </div>
+      <div class="fade-in">
+        <div class="stat-number" data-target="50" data-suffix="+">0</div>
+        <div class="stat-label">Supported clients</div>
+      </div>
+      <div class="fade-in">
+        <div class="stat-number" data-target="10000" data-suffix="+">0</div>
+        <div class="stat-label">GitHub stars</div>
+      </div>
+      <div class="fade-in">
+        <div class="stat-number" data-target="3" data-suffix=" SDKs">0</div>
+        <div class="stat-label">Official SDKs</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer>
+    <p>Built with ❤️ · <a href="https://modelcontextprotocol.io" target="_blank" rel="noopener" style="color:inherit">modelcontextprotocol.io</a></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
